@@ -557,7 +557,11 @@ pg84.txt	pg86.txt
 12.  Again, go back to your home directory.  Now... go to the science-fiction directory using an absolute path!  Verify that you're in the right directory using pwd.
 
 Write the command(s) that you used to do this below:
-
+217-M08:~ terence.buckley30$ /Users/terence.buckley30/science-fiction
+-bash: /Users/terence.buckley30/science-fiction: is a directory
+V217-M08:~ terence.buckley30$ pwd
+/Users/terence.buckley30
+V217-M08:~ terence.buckley30$ 
 ==========
 OPTIONAL
 13. Immediately change back to the mtec1002-lab-03 folder with a single command using a *relative* path.

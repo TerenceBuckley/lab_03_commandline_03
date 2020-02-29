@@ -35,7 +35,9 @@ Follow the instructions line-by-line.
 $ touch foo.txt
 $ ls
 Copy and paste the output below.
-----------
+------V217-M08:my_files terence.buckley30$ ls
+foo.txt
+---
 
 
 
@@ -51,7 +53,9 @@ $ touch bar.txt
 8. List the files in this directory using the flag that gives the most details.
 
 Copy and paste the output below.
-----------
+ ls -a
+.	..	bar.txt	foo.txt
+
 
 
 
@@ -60,7 +64,8 @@ Copy and paste the output below.
 
 
 Write the command that you used to copy the file.  Additionally, copy and paste the output of your file listing below.
-----------
+-------ls -a
+.	..	bar.txt	baz.txt	foo.txt--
 
 
 
@@ -68,13 +73,19 @@ Write the command that you used to copy the file.  Additionally, copy and paste 
 10. Delete the file called bar.txt and then list the files again.
 
 Write the command that you used to remove the file.  Copy and paste the output of your file listing below.
-----------
+---------- rm bar.txt
+V217-M08:my_files terence.buckley30$ ls -a
+.	..	baz.txt	foo.txt
+
 ==========
 11. Move the file called foo.txt to qux.txt and then list the files again.
 
 
 Write the command that you used to move the file.  Copy and paste the output of your file listing below.
-----------
+------mv foo.txt qux.txt
+V217-M08:my_files terence.buckley30$ ls -a
+.	..	baz.txt	qux.txt
+----
 
 
 
@@ -89,7 +100,8 @@ Write the command that you used to move the file.  Copy and paste the output of 
 13. Try removing the directory called my_files using rmdir.
 
 Write out the command that you used and what happened.
-----------
+---------V217-M08:~ terence.buckley30$ rmdir my_files
+rmdir: my_files: Directory not empty
 
 
 
@@ -97,7 +109,9 @@ Write out the command that you used and what happened.
 14. Try removing the directory called my_files using rm.
 
 Write out the command that you used and what happened.
-----------
+rm my_files
+rm: my_files: is a directory
+
 
 
 
@@ -107,7 +121,15 @@ Write out the command that you used and what happened.
 Force the removal of the directory and files using the -rf flag
 
 $ rm -rf my_files
-----------
+
+----- rm -rf my_files
+V217-M08:~ terence.buckley30$ ls -a
+.			.oracle_jre_usage	Movies
+..			Applications		Music
+.CFUserTextEncoding	Desktop			Pictures
+.Trash			Documents		Public
+.bash_sessions		Downloads		isus
+.cups			Library			science-fiction----
 
 
 
@@ -119,8 +141,11 @@ books/other/pg1232.txt
 Use the command called cat on the file to show its contents. 
 
 Describe what happened below.
-----------
-
+I was using a the computer in the lab on the second floor
+---------
+terence.buckley30$ /Users/terence.buckley/mtec1002-lab-03
+-bash: /Users/terence.buckley/mtec1002-lab-03: No such file or directory
+V217-M08:~ terence.buckley30$ cd ~ mtec1002-lab-03
 
 
 ==========

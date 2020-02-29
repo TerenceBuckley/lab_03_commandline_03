@@ -557,7 +557,6 @@ pg84.txt	pg86.txt
 12.  Again, go back to your home directory.  Now... go to the science-fiction directory using an absolute path!  Verify that you're in the right directory using pwd.
 
 Write the command(s) that you used to do this below:
-----------
 
 ==========
 OPTIONAL

@@ -85,6 +85,7 @@ What command did you use to find the permissions?
 6. Change the permissions so that this file is executable by the user.  Verify the new permissions.
 
 What commands did you use to do this?  What was the output?
+to_backup
 ----------
 
 
@@ -103,7 +104,7 @@ What command did you use to try to execute the file?  What happens?
 8. Open the file with nano
 
 What command did you use to do this?
-----------
+nano filename.txt
 
 
 

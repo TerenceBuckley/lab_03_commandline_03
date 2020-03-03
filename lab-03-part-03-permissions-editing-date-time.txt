@@ -16,23 +16,32 @@ We're going to be writing a shell script.  First, though... let's figure out wha
 1. What day and time is it?
 
 What command did you use, and what was its output?
-----------
 
-
+314-ent-017:~ student$ date
+Tue Mar  3 09:51:54 EST 2020
 
 ==========
 2. Print out a calendar for this month.
 
 What command did you use, and what was its output?
-----------
-
+----------314-ent-017:~ student$ cal
+     March 2020       
+Su Mo Tu We Th Fr Sa  
+ 1  2  3  4  5  6  7  
+ 8  9 10 11 12 13 14  
+15 16 17 18 19 20 21  
+22 23 24 25 26 27 28  
+29 30 31             
 
 
 ==========
 3. Go to your home directory.  Verify that you're in your home directory.
 
 What commands did you use to do this?
-----------
+-017:~ student$ ~
+-bash: /Users/student: is a directory
+v314-ent-017:~ student$ 
+
 
 
 
@@ -40,7 +49,28 @@ What commands did you use to do this?
 4. Create an empty file called copy_to_backup.sh.  Verify that the file exists.
 
 What commands did you use to do this?
-----------
+----------314-ent-017:~ student$ ls -a
+.			.flexlmrc		Movies
+..			.gitconfig		Music
+.CFUserTextEncoding	.gitignore		Pictures
+.DS_Store		.gnome2			Public
+.IdentityService	.local			QLData
+.ServiceHub		.macports		Things
+.Trash			.matlab			__MACOSX
+.Xauthority		.mono			copy_to_backup.sh.
+.adobe			.mplabcomm		hello.txt
+.anaconda		.mysql_history		ipe.properties
+.android		.nuget			isus
+.atom			.oracle_jre_usage	lab_01_commandline_01
+.bash_history		.rnd			mtec1002
+.bash_profile		.subversion		mtec1002-lab-03
+.bash_sessions		.thumbnails		mtec1002-lab-03.tar.gz
+.cache			Adlm			mtec1003
+.config			Applications		mtec1003javascript
+.continuum		Desktop			pymel.log
+.dotnet			Documents		temp
+.eaglerc		Downloads		xgen
+.eclipse		Library
 
 
 
@@ -48,8 +78,7 @@ What commands did you use to do this?
 5. What are the permissions on your copy_to_backup.sh.
 
 What command did you use to find the permissions?
-----------
-
+----------ls -l copy_to_backup.sh.
 
 
 ==========

@@ -78,15 +78,16 @@ What commands did you use to do this?
 5. What are the permissions on your copy_to_backup.sh.
 
 What command did you use to find the permissions?
-----------ls -l copy_to_backup.sh.
+--------ls -l copy_to_backup.sh
+-rw-r--r--  1 student  staff  0 Mar  3 18:43 copy_to_backup.sh-
 
 
 ==========
 6. Change the permissions so that this file is executable by the user.  Verify the new permissions.
 
 What commands did you use to do this?  What was the output?
-to_backup
-----------
+ls -l copy_to_backup.sh
+-rwxr--r--  1 student  staff  0 Mar  3 18:43 copy_to_backup.sh
 
 
 
@@ -96,15 +97,13 @@ to_backup
 $ ./copy_to_backup.sh
 
 What command did you use to try to execute the file?  What happens?
-----------
-
-
+---------Nothing happened
 
 ==========
 8. Open the file with nano
 
 What command did you use to do this?
-nano filename.txt
+nano copy_to_backup.sh*
 
 
 
@@ -116,7 +115,9 @@ b. copy all of the files txt files in the current directory to the backup direct
 c. print out "I'm done backing up"
 
 Write out the code in your file below...
-----------
+mkdir -p /backup
+cp * .txt /backup
+echo "Im done backing utp"
 
 
 
@@ -127,15 +128,17 @@ Write out the code in your file below...
 11. Go into that directory and create two empty files... 1.txt and 2.txt
 
 What commands did you use to do this?
-----------
-
+-017:~ student$ mkdir test
+v314-ent-017:~ student$ cd test
+v314-ent-017:test student$ touch 1.txt
+v314-ent-017:test student$ touch 2.txt
 
 
 ==========
 12. Move the script that you created into this directory.
 
 What commands did you use to do this?
-----------
+event-017:test student$ mv copy_to_backup.sh test
 
 
 
@@ -143,7 +146,7 @@ What commands did you use to do this?
 13. Run your script.
 
 What commands did you use to do this?
-----------
+./copy_to_backup.sh
 
 
 
@@ -151,4 +154,5 @@ What commands did you use to do this?
 14. Verify that a backup folder was created in your home directory... with copies of the files present.
 
 What commands did you use to do this?  Show the output.
-----------
+314-ent-017:test student$ ls
+1.txt	2.txt	backup	test
